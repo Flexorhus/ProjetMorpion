@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin-top: 50px; 
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.cell:nth-child(3n){
+    border-right: none;
+}
+.cell:nth-child(1n){
+    border-left: none;
+    border-top: none;
+}
+.row:last-child .cell {
+    border-bottom: none; /* Enlève la bordure inférieure uniquement pour la dernière ligne */
+}
+
+#tableauMorpion {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 40%;
+    margin-bottom: 300px;
+} 
+div.cell {
+    border: 2px solid black ;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    font-size: 80px;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cell {
+    display: flex;
+    justify-content: space-evenly;
+}
+.gameEnd {
+    text-align: center;
+
+}
+
+#endGameStatus {
+    font-size: 40px;
+}
+
+/* bouton restart fin de page  */
+#restart {
+    background-color: rgb(0,140,255);
+    color: #fff;
+    margin-top: 40px;
+    margin-right: 70px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+
+}
+
+#playCpu {
+    background-color: rgb(0,140,255);
+    color: #fff;
+    margin-top: 40px;
+    margin-right: 70px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+
+}
+
